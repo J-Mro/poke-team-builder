@@ -1,7 +1,8 @@
 import { useState } from "react";
+import "./PokemonCard.css";
 
 export function PokemonCard(props) {
-  const { pokemon } = props;
+  const { pokemon, index } = props;
   const [isShiny, setIsShiny] = useState(false);
   return (
     <div>
@@ -12,9 +13,13 @@ export function PokemonCard(props) {
         }
         alt={`${pokemon.name} sprite`}
       />
-      <p>{pokemon.name}</p>
+      <p>
+        <span>{pokemon.name}</span>
+      </p>
       {pokemon.types.map((entry) => (
-        <p>{entry.type.name}</p>
+        <p key={`pokemonCard${index}`}>
+          <span className={`${entry.type.name}-type`}>{entry.type.name}</span>
+        </p>
       ))}
       <label>
         shiny
