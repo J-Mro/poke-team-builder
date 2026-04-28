@@ -5,24 +5,29 @@ import "./Popup.css";
 export function Popup(props) {
   const { index, setIndex, pokemonTeam, setPokemonTeam } = props;
   const [search, setSearch] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
   const handleChange = (e) => {
     setSearch(e.target.value);
   };
   const handleClick = () => {
-    setIndex(null);
+    if (!error) setIndex(null);
   };
-  async function handleSubmit(e) {
+
+  const handleSubmit = async (e) => {
+    setIsLoading(true);
     try {
       e.preventDefault();
       const pokemon = await getSinglePokemon(search);
       const updatedTeam = Array.from(pokemonTeam);
       updatedTeam[index] = pokemon;
       setPokemonTeam(updatedTeam);
+      setError(null);
       setIndex(null);
     } catch (err) {
-      console.log(err);
+      setError(err);
     }
-  }
+  };
 
   return (
     <div className="popup">
@@ -40,6 +45,7 @@ export function Popup(props) {
             placeholder="e.g. Bulbasaur"
             onChange={handleChange}
           />
+          {error && <p>This pokemon was not found!</p>}
           <button type="submit">I choose you!</button>
         </form>
       </div>
