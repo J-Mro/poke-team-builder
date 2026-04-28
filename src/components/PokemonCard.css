@@ -1,0 +1,93 @@
+.bug-type {
+  background-color: olivedrab;
+  color: whitesmoke;
+}
+
+.dark-type {
+  background-color: rgb(39, 38, 38);
+  color: whitesmoke;
+}
+
+.dragon-type {
+  background-color: rgb(105, 79, 186);
+  color: whitesmoke;
+}
+
+.electric-type {
+  background-color: #fed12e;
+  color: whitesmoke;
+}
+
+.fighting-type {
+  background-color: rgb(108, 20, 20);
+  color: whitesmoke;
+}
+
+.fire-type {
+  background-color: rgb(188, 47, 47);
+  color: whitesmoke;
+}
+
+.flying-type {
+  background-color: rgb(59, 128, 201);
+  color: whitesmoke;
+}
+
+.ghost-type {
+  background-color: rgb(52, 34, 108);
+  color: whitesmoke;
+}
+
+.ground-type {
+  background-color: rgb(108, 105, 49);
+  color: whitesmoke;
+}
+
+.ice-type {
+  background-color: rgb(66, 213, 246);
+  color: whitesmoke;
+}
+
+.normal-type {
+  background-color: rgb(160, 160, 160);
+  color: whitesmoke;
+}
+
+.psychic-type {
+  background-color: rgb(180, 18, 198);
+  color: whitesmoke;
+}
+
+.rock-type {
+  background-color: rgb(112, 111, 48);
+  color: whitesmoke;
+}
+
+.steel-type {
+  background-image: linear-gradient(
+    to top,
+    rgb(108, 108, 108),
+    rgb(187, 187, 187)
+  );
+  color: whitesmoke;
+}
+
+.water-type {
+  background-color: rgb(26, 98, 175);
+  color: whitesmoke;
+}
+
+.grass-type {
+  background-color: green;
+  color: whitesmoke;
+}
+
+.poison-type {
+  background-color: purple;
+  color: whitesmoke;
+}
+
+.fairy-type {
+  background-color: hotpink;
+  color: whitesmoke;
+}
