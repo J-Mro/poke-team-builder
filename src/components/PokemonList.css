@@ -1,0 +1,11 @@
+.pokemon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pokeball-btn-img {
+  height: 100px;
+}
+.pokeball-btn-img:hover {
+  rotate: 30deg;
+}
