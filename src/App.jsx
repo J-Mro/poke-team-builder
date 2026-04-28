@@ -1,12 +1,15 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { TeamList } from "./components/TeamList";
+import { PokemonList } from "./components/PokemonList.jsx";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<TeamList />} />
-    </Routes>
+    <main>
+      <h1>Pokemon Team Builder</h1>
+      <Routes>
+        <Route path="/" element={<PokemonList />} />
+      </Routes>
+    </main>
   );
 }
 
